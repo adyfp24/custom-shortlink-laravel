@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/shortlink',[ShortlinkController::class, 'shortURL']);
+//Route::post('/shortlink',[ShortlinkController::class, 'shortURL']);
 Route::get('/{code}',[ShortlinkController::class, 'redirectLongURL']);
